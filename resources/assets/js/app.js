@@ -8,18 +8,19 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
+Vue.component('remate', require('./components/Remate.vue'));
+/*-----------------------Página--------------------------*/
+Vue.component('inicio', require('./components/Inicio.vue'));
+Vue.component('quienes', require('./components/QuienesSomos.vue'));
 const app = new Vue({
     el: '#app',
     data:{
-        menu:0
+        menu:0,
+        ruta:'http://localhost/paginaweb/public'
     }
 });

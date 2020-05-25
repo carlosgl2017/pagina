@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -18,7 +17,9 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->integer('id_roles');
             $table->rememberToken();
+            $table->foreign('id_roles')->references('id_roles')->on('roles')->onDelete('cascade');
             $table->timestamps();
         });
     }

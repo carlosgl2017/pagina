@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Sistema Ventas Laravel Vue Js- IncanatoIT">
-    <meta name="author" content="Incanatoit.com">
-    <meta name="keyword" content="Sistema ventas Laravel Vue Js, Sistema compras Laravel Vue Js">
+    <meta name="description" content="Sistema Web">
+    <meta name="author" content="#">
+    <meta name="keyword" content="Sistema Website">
     <link rel="shortcut icon" href="img/favicon.png">
     <title>Cooperativa San Martín</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -77,7 +77,7 @@
     </div>  
     </div>  
     <footer class="app-footer">
-        <span><a href="">IncanatoIT</a> &copy; 2020</span>
+        <span><a href="">Cooperativa de Ahorro y Crédito Societaria San Martín</a> &copy; 2020</span>
         <span class="ml-auto">Desarrollado por <a href="">Team Sistemas Coop. San Martín</a></span>
     </footer>
     <!-- Bootstrap and necessary plugins -->
