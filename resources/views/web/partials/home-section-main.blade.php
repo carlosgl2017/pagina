@@ -27,16 +27,16 @@
               <h3></h3>
             </div>
             <div class="os-animation" data-animation="bounceInUp" data-delay="1s">
-              <a class="btn btn-outline-light btn-lg" href="#info-economica">Empezar</a>
+              <a  class="btn btn-success btn-lg" href="#info-economica">Comenzar</a>
             </div>
           </div>
           <!--- End Carousel Caption -->
         </div>
         <!-- Slide Two -->
-        <div class="carousel-item" style="background-image: url('web/img/computers-1.png')" alt></div>
+        <div class="carousel-item" style="background-image: url('web/img/horario.png')" alt></div>
         <!-- Slide Three -->
-        <!--<div class="carousel-item" style="background-image: url('web/img/computers-3.jpg')" alt></div>
-      </div>-->
+        <!--<div class="carousel-item" style="background-image: url('web/img/computers-1.png')" alt></div>-->
+      </div>
       <!--- End Carousel Inner -->
       <!--- Previous & Next Buttons -->
       <a

@@ -38,7 +38,7 @@
                         <span class="fa-layers fa-4x">
                             <i class="fas fa-users" data-fa-transform="left-2"></i>
                         </span>
-                        <h3><span class="counter">5920</span></h3>
+                        <h3><span class="counter">5706</span></h3>
                         <p>Socios</p>
                     </div>
                 </div>

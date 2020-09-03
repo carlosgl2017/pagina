@@ -15,8 +15,8 @@
             <h3 class="text-center">INFORMACIÓN DE CONTACTO</h3>
                 <strong>Nuestra Dirección</strong>
                 <p>Calle Topater N°5 (Entre Hoyos yLinares)<br/>Potosí-Bolivia</p>
-                <strong>Teléfono</strong>
-                <p>6230763<br>info@sanmartin.com.bo</p>
+                <strong>Teléfonos</strong>
+                <p>2-6230763 | 2-6222431<br>info@sanmartin.com.bo</p>
             </div>
 
             <div class="col-md-4">

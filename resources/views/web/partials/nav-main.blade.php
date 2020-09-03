@@ -1,7 +1,6 @@
 <!--- Navigation -->
 <hr style="border-top: 3px solid #F5BB00;margin: 0">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="main_navbar">
-
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,8 +68,9 @@
                   Servicios
                </a>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="http://181.188.171.131:8005">Solicitar Crédito</a></li>
                   <li><a class="dropdown-item" href="{{route('otorgacion_creditos')}}">Otorgación de Créditos</a></li>
-                  <li><a class="dropdown-item" href="{{route('solicitar_credito')}}">Solicitar Crédito</a></li>
+                 
                   <li><a class="dropdown-item" href="{{route('certificados_aportacion')}}">Certificados de Aportación</a></li>
                   <li><a class="dropdown-item" href="{{route('cambio_divisas')}}">Cambio de Divisas</a></li>
                   <div class="dropdown-divider"></div>
@@ -98,6 +98,7 @@
                   Educación Financiera
                </a>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="{{route('inscripcion')}}">Inscripción al curso</a></li>
                   <li><a class="dropdown-item" href="{{route('programa_educacion')}}">Programa de Educación Financiera</a></li>
                   <li><a class="dropdown-item" href="{{route('punto_reclamo')}}">Punto de Reclamo</a></li>
                   <li><a class="dropdown-item" href="{{route('derechos_obligaciones')}}">Derechos y Obligaciones</a></li>
@@ -109,13 +110,13 @@
             </li>
 
             <li class="nav-item">
-               <a class="nav-link" href="#incentivos">Incentivos</a>
+               <a class="nav-link" href="{{route('incentivos')}}">Incentivos</a>
             </li>
             <!--<li class="nav-item">
                <a class="nav-link" href="{{route('remates')}}">Remates</a>
             </li>-->
             <li class="nav-item">
-               <a class="nav-link" href="{{Redirect::to('#ubicacion')}}">Ubicación</a>
+               <a class="nav-link" href="{{route('ubicacion')}}">Ubicación</a>
             </li>
          </ul>
          <!--<form class="form-inline my-2 my-lg-0">

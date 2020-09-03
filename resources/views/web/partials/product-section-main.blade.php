@@ -17,10 +17,9 @@
                         <div class="card text-justify ">
                             <img class="card-img-top" src="web/img/servicios/credito.jpg" alt="">
                             <div class="card-body " >
-                                <h4>Créditos</h4>
+                                <h4> Solicita tu Crédito</h4>
                                 <p>Sólo en Cooperativa Societaria "San Martín" R.L. es así de fácil. Conocemos las necesidades de nuestras familias, por ello los créditos son rápidos, ágiles y sencillos.</p>
-                                <a class="btn btn-secondary btn-sm" href="#">Más Información</a>
-
+                                <a class="btn btn-secondary btn-sm" href="http://181.188.171.131:8005">Solicitar Crédito</a>
                             </div>
                         </div>
 

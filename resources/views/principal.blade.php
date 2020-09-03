@@ -9,9 +9,11 @@
     <meta name="keyword" content="Sistema Website">
     <link rel="shortcut icon" href="img/favicon.png">
     <title>Cooperativa San Martín</title>
+    <meta name="description" content="Brindamos soluciones financieras integrales con Eficiencia, oportunidad y Responsabilidad Social, para satisfacer las necesidades económicas de nuestros socios (as), basado en valores y Principios Cooperativos."/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Icons -->
     <link href="css/plantilla.css" rel="stylesheet">
+   
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
@@ -75,7 +77,7 @@
         @yield('contenido')
         <!-- /Fin del contenido principal -->
     </div>  
-    </div>  
+    </div>
     <footer class="app-footer">
         <span><a href="">Cooperativa de Ahorro y Crédito Societaria San Martín</a> &copy; 2020</span>
         <span class="ml-auto">Desarrollado por <a href="">Team Sistemas Coop. San Martín</a></span>
@@ -84,5 +86,4 @@
     <script src="js/app.js"></script>
     <script src="js/plantilla.js"></script>
 </body>
-
 </html>

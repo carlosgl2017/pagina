@@ -1,9 +1,6 @@
 <footer>
     <hr style="border-top: 5px solid #F5BB00;margin: 0">
 	<div class="container-footer-all">
-    
-
-
 		<div class="container-body">
 
 			<div class="colum1">
@@ -63,7 +60,8 @@
 
                 	<div class="row2">
                 		<img src="{{asset('web/img/icon/smartphone.png')}}">
-                		<label>6230763</label>
+                		<label>2-6230763</label>
+                		<label>2-6222431</label>
                 	</div>
 
                 	<div class="row2">
@@ -88,5 +86,4 @@
                 </div>
 
             </div>
-
         </footer>

@@ -22,7 +22,8 @@ Route::get('dashboard', 'HomeController@dashboard');
 
 /*--------------------Rutas Página Begin--------------------------*/
 Route::get('/', 'WebController@index')->name('main');
-Route::get('/#ubicacion', 'WebController@ubicacion')->name('ubicacion');
+Route::get('/ubicacion/', 'WebController@ubicacion')->name('ubicacion');
+Route::get('/incentivos/', 'WebController@incentivo')->name('incentivos');
 Route::get('/modulo', 'WebController@modular');
 Route::get('/scraping', 'ScrapingController@index');
 /*Quienes somos inicio*/
@@ -52,6 +53,11 @@ Route::get('/web/Educacion/derechos_obligaciones', 'EducacionFinancieraControlle
 Route::get('/web/Educacion/responsabilidad_social', 'EducacionFinancieraController@responsabilidad_social')->name('responsabilidad_social');
 Route::get('/web/Educacion/liderazgo', 'EducacionFinancieraController@liderazgo')->name('liderazgo');
 Route::get('/web/Educacion/multimedia', 'EducacionFinancieraController@multimedia')->name('multimedia');
+
+Route::get('/web/Educacion/create', 'InvitadoController@create')->name('inscripcion');
+Route::post('/web/Educacion/register', 'InvitadoController@register')->name('register');
+Route::post('/web/Educacion/{id}/save', 'InvitadoController@save');
+Route::post('/web/Educacion', 'InvitadoController@index');
 /*--------------------Servicios-----------------------------*/
 Route::get('/web/Servicios/otorgacion_creditos', 'ServiciosController@otorgacion_creditos')->name('otorgacion_creditos');
 Route::get('/web/Servicios/certificados_aportacion', 'ServiciosController@certificados_aportacion')->name('certificados_aportacion');
@@ -80,7 +86,9 @@ Route::get('/photo/{id}/edit', 'PhotoController@edit'); //formulario de edicion
 Route::post('/photo/{id}/edit', 'PhotoController@update')->name('photo.editar'); //actualizar
 Route::delete('/photo/{id}', 'PhotoController@destroy'); //actualizar
 
-/* remates vue
+
+
+ /*remates vue
 Route::get('/remate', 'RemateController@index');
 Route::post('/remate/registrar', 'RemateController@store');
 Route::put('/remate/actualizar', 'RemateController@update');
@@ -91,11 +99,11 @@ Route::get('/remate/listarPdf', 'RemateController@listarPdf')->name('remates_pdf
  */
 
 /*Inicio rutas usuario convencional*/
-Route::middleware(['auth', 'usuario'])->group(function () {
+/*Route::middleware(['auth', 'usuario'])->group(function () {
     Route::get('/remate', 'RemateController@index'); //listado
     Route::get('/remate/create', 'RemateController@create'); //crear
     Route::post('/remate', 'RemateController@store'); //crear
     Route::get('/remate/{id}/edit', 'RemateController@edit'); //formulario de edicion
     Route::post('/remate/{id}/edit', 'RemateController@update'); //actualizar
     Route::delete('/remate/{id}', 'RemateController@destroy'); //actualizar
-});
+});*/

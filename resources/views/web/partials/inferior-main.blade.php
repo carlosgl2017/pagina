@@ -16,7 +16,7 @@
 					La Cooperativa de Ahorro y Crédito Societaria "San Martin" R.L., comunica a sus
 					asociados, que en virtud a las acciones de emergencia dispuestas por el Gobierno
 					Nacional para la prevención y contención del brote de Coronavirus, se está
-					atendiendo en horario continuo de horas <strong>07:00 a 12:00</strong>
+					atendiendo en horario continuo de horas <strong>08:00 a 14:30</strong>
 					Se insinúa tomar nota de la presente. Cualquier modificación se dará a conocer
 					oportunamente.
 					<br>
@@ -43,39 +43,58 @@
 <script src="{{asset('web/js/popper.min.js')}}"></script>
 <script src="{{asset('web/bootstrap-4.3.1-dist/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('web/js/bootnavbar.js')}}"></script>
-<script src="{{asset('js/app.js')}}"></script>
-<script src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"></script>
+<script>
+	$(function () {
+		$('#main_navbar').bootnavbar({
+                animation: true
+            });
+	})
+</script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="{{asset('web/js/owl.carousel.js')}}"></script>
+<script src="{{asset('web/js/maps.js')}}"></script>
+
+
+
+<!--<script src="{{asset('js/app.js')}}"></script>-->
 <script src="{{asset('web/js/custom.js')}}"></script>
 <script src="{{asset('web/js/jquery.waypoints.min.js')}}"></script>
 <script src="{{asset('web/js/waypoints.js')}}"></script>
 <script src="{{asset('web/js/lightbox.js')}}"></script>
-<script src="{{asset('web/js/owl.carousel.js')}}"></script>
+
 <script src="{{asset('web/js/jquery.counterup.js')}}"></script>
 <script src="{{asset('web/js/validator.js')}}"></script>
 <script src="{{asset('web/js/contact.js')}}"></script>
-<script src="{{asset('web/js/maps.js')}}"></script>
 
+<!-- Cargar código javascript-->
+@stack('scripts')
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e72b8581758630012f31b0f&cms=website' async='async'></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9kOvbR9PbGTRuoJekD1f1HYY0_JWZAtc&callback=init_map"></script>
 
-@if (session('showModal'))
+
+
+{{--@if (session('showModal'))
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#myModal').modal('show')
 	});
 </script>
-@endif
+@endif--}}
 
-<script>
-	$(function () {
-		$('#main_navbar').bootnavbar({
-                //option
-                //animation: false
-            });
-	})
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ecc47dbc75cbf1769ef44df/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
-
-
+<!--End of Tawk.to Script-->
 </body>
 </html>

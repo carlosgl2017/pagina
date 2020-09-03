@@ -21,7 +21,7 @@ class WebController extends Controller
             session(['showModal' => false]);
         } else {
             session(['showModal' => true]);
-            $cookie = Cookie::make('hide_modal', true, 9);
+            $cookie = Cookie::make('hide_modal', true, 1);
             Cookie::queue($cookie);
         }
             /*$ufv=$scrawler->filter('#accordion1')->filter('.cotizacion-texto')->each(function ($node) {
@@ -31,7 +31,11 @@ class WebController extends Controller
     }
     public function ubicacion()
     {
-        return view('web.master');
+        return redirect('/#ubicacion');
+    }
+    public function incentivo()
+    {
+        return redirect('/#incentivos');
     }
     public function mision()
     {
