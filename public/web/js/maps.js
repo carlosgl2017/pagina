@@ -2,7 +2,7 @@ function init_map(){
     var var_location = new google.maps.LatLng(-19.58908967734665,-65.7488863300517);
     var var_mapoptions = {
       center: var_location,
-      zoom: 17
+      zoom: 19
     };
     var var_marker = new google.maps.Marker({
         position: var_location,

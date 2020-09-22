@@ -21,7 +21,7 @@ class WebController extends Controller
             session(['showModal' => false]);
         } else {
             session(['showModal' => true]);
-            $cookie = Cookie::make('hide_modal', true, 1);
+            $cookie = Cookie::make('hide_modal', true, 120);//indica tiempo en minutos en laravel
             Cookie::queue($cookie);
         }
             /*$ufv=$scrawler->filter('#accordion1')->filter('.cotizacion-texto')->each(function ($node) {

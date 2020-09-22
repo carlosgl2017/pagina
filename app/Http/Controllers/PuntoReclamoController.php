@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\MessageReceived;
 use Illuminate\Http\Request;
 
+
 class PuntoReclamoController extends Controller
 {
 public function index()
@@ -27,11 +28,16 @@ public function store()
     'fecha'=>'nullable|date',
     'monto_comprometido'=>'nullable',
     'departamento'=>'nullable',
-    'descripcion'=>'nullable'
+    'descripcion'=>'nullable',
+    'exp'=>'nullable'
+    //'g-recaptcha-response'=>'required|recaptcha'
     ],[
     'name.required'=>('El nombre es obligatorio')
     ]);
-   Mail::to('jgarcia@sanmartin.com.bo')->send(new MessageReceived($msg));
-   return 'Mensaje Enviado';
+    Mail::to('info@sanmartin.com.bo')->send(new MessageReceived($msg));
+    alert()->success('Notificación', 'Estimado Soci@ se envio correctamente su reclamo');
+    return view('web.Educacion.index');
+    
+  
  }
 }

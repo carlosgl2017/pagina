@@ -146,6 +146,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -210,6 +211,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'TawkTo' => Emotality\TawkTo\Facades\TawkTo::class,
+        'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
+
 
     ],
 

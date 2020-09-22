@@ -11,7 +11,7 @@
 		{{csrf_field()}}  
 		<div class="row border border-success mb-4">	
 
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+			<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
 				<div class="form-group" class="form-control">
 				<label for="tipo_reclamo"> Seleccionar el tipo de reclamo</label>
 					<select name="tipo_reclamo"  class="form-control selectpicker" data-size="5" id="tipo_reclamo" data-live-search="true" required>						
@@ -42,30 +42,53 @@
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
 					<label for="name">Nombres</label>
-					<input type="text" name="name" class="form-control" value="{{old('name')}}">
+					<input type="text" name="name" class="form-control" value="{{old('name')}}" required>
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
 					<label for="apellidos">Apellidos</label>
-					<input type="text" name="apellidos" class="form-control" value="{{old('apellidos')}}">
+					<input type="text" name="apellidos" class="form-control" value="{{old('apellidos')}}" required>
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
 					<label for="ci">Cédula de Identidad</label>
-					<input type="number" name="ci" class="form-control" value="{{old('ci')}}">
+					<input type="text" name="ci" class="form-control" value="{{old('ci')}}" required>
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="tipo">Tipo de reclamante</label>
-					<input type="text" name="tipo" class="form-control" value="{{old('tipo')}}">
+				<div class="form-group" class="form-control">
+				<label for="tipo"> Expedido en </label>
+					<select name="exp"  class="form-control selectpicker" data-size="5" id="tipo_reclamo" data-live-search="true" required>						
+						<option value="PT"> PT </option>				
+						<option value="LP"> LP </option>
+						<option value="CB"> CB</option>
+						<option value="SC"> SC</option>
+						<option value="BN"> BN</option>
+						<option value="PA"> PA</option>
+						<option value="TJ"> TJ</option>
+						<option value="CH"> CH</option>
+						<option value="OR"> OR</option>
+					</select>
 				</div>
 			</div>
+
+		
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group" class="form-control">
+				<label for="tipo"> Seleccionar Tipo de Reclamante</label>
+					<select name="tipo"  class="form-control selectpicker" data-size="5" id="tipo_reclamo" data-live-search="true" required>						
+						<option value="Persona (Persona Natural)"> Persona (Persona Natural) </option>				
+						<option value="Empresa (Persona Jurídica)"> Empresa (Persona Jurídica) </option>
+						<option value="Apoderado de una Persona Natural"> Apoderado de una Persona Natural</option>
+					</select>
+				</div>
+			</div>
+
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
@@ -84,35 +107,35 @@
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
 					<label for="direccion">Dirección (Calle  y Zona)</label>
-					<input type="text" name="direccion" class="form-control" value="{{old('direccion')}}">
+					<input type="text" name="direccion" class="form-control" value="{{old('direccion')}}"  required>
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
 					<label for="email">Email</label>
-					<input type="email" name="email" class="form-control" value="{{old('email')}}">
+					<input type="email" name="email" class="form-control" value="{{old('email')}}" required>
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
-					<label for="telefono">Teléfono</label>
-					<input type="number" name="telefono" class="form-control" value="{{old('telefono')}}">
+					<label for="telefono">Celular</label>
+					<input type="number" name="telefono" class="form-control" value="{{old('telefono')}}" required>
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
 					<label for="fecha">Fecha del hecho que motiva el reclamo</label>
-					<input type="date" name="fecha" class="form-control" value="{{old('fecha')}}">
+					<input type="date" name="fecha" class="form-control" value="{{old('fecha')}}" required>
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
 					<label for="monto_comprometido">Monto comprometido</label>
-					<input type="number" name="monto_comprometido" class="form-control" value="{{old('monto_comprometido')}}">
+					<input type="number" name="monto_comprometido" class="form-control" value="{{old('monto_comprometido')}}" required>
 				</div>
 			</div>
 
@@ -126,13 +149,22 @@
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
 					<label for="descripcion">Descripción del reclamo y/o solicitud del reclamante</label>
-					<input type="text" name="descripcion" class="form-control" value="{{old('descripcion')}}">
+					<textarea type="text" name="descripcion" class="form-control" value="{{old('descripcion')}}">
+						
+					</textarea>
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<button class="btn btn-primary" type="submit">Guardar</button>
+				<div class="form-group text-center">
+				<label for="descripcion">Captcha</label>
+					{!! Recaptcha::Render() !!}
+				</div>
+			</div>
+
+			<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+				<div class="form-group text-center">
+					<button class="btn btn-success" type="submit">Enviar</button>
 					<button class="btn btn-danger" type="reset">Cancelar</button>
 				</div>
 			</div>

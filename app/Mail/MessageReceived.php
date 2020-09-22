@@ -10,8 +10,8 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class MessageReceived extends Mailable
 {
     use Queueable, SerializesModels;
- public $subject='Mensaje recibido';
- public $msg;
+    public $subject='Mensaje recibido';
+    public $msg;
     /**
      * Create a new message instance.
      *
