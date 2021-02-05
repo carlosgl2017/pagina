@@ -4,7 +4,7 @@
 <div class="contenido-electoral">
     <div class="electoral">
 
-        <img class="img-fluid" src="{{asset('web/img/educacion/oficial.png')}}">
+        <img class="img-fluid" src="{{asset('web/img/educacion/february.png')}}">
     </div>
 </div>
 <div style="height: 150px; overflow: hidden; background: #f2f2f2"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">

@@ -138,6 +138,18 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
                                 <td>31/07/2020</td>
                                 <td>63.37</td>
                             </tr>
+                            <tr>
+                                <td>31/08/2020</td>
+                                <td>62.65</td>
+                            </tr>
+                            <tr>
+                                <td>30/09/2020</td>
+                                <td>61.26</td>
+                            </tr>
+                            <tr>
+                                <td>31/10/2020</td>
+                                <td>58.88</td>
+                            </tr>
                         </tbody>
                     </table>
                     </div>

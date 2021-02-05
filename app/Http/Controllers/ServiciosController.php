@@ -18,4 +18,12 @@ class ServiciosController extends Controller
     {
         return view('web.Servicios.cambio_divisas');
     }
+    public function aapos()
+    {
+        return view('web.Servicios.pago-aapos');
+    }
+    public function sepsa()
+    {
+        return view('web.Servicios.pago-sepsa');
+    }
 }

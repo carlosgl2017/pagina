@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="row d-flex">
 		<div class="col-md-12 d-flex justify-content-center animated zoomIn">
-			<h4 style="text-align:center">Inscríbete al curso Rol de la ASFI, Derechos y obligaciones del consumidor</h4>
+			<h4 style="text-align:center">Inscríbete al curso: EL CRÉDITO, DIFERIMIENTO, REPROGRAMACIÓN Y REFINANCIAMIENTO</h4>
 		</div>
 	</div>
 
@@ -27,7 +27,7 @@
 				<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 					<!-- Grupo: Fecha -->
 					<div class="formulario__grupo" id="grupo__fecha_nac">
-						<label for="fecha_nac" class="formulario__label">Ingrese Fecha de Nacimiento</label>
+						<label for="fecha_nac" class="formulario__label">Ingrese su Fecha de Nacimiento</label>
 						<div class="formulario__grupo-input">
 							<input type="date" class="formulario__input" name="fecha_nac" id="fecha_nac" placeholder="12-12-1966" required>
 							<i class="formulario__validacion-estado fas fa-times-circle"></i>

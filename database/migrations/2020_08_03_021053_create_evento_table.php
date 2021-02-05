@@ -20,6 +20,7 @@ class CreateEventoTable extends Migration
             $table->time('hora_evento');
             $table->string('descripcion');
             $table->string('ubicacion');
+            $table->boolean('estado')->default(false);
             $table->timestamps();
         });
     }

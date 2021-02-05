@@ -18,7 +18,7 @@
                         <span class="fa-layers fa-4x">
                             <i class="fas fa-clock"></i>
                         </span>
-                        <h3><span class="counter">20</span></h3>
+                        <h3><span class="counter">{{date('Y')-1967}}</span></h3>
                         <p>años</p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                         <span class="fa-layers fa-4x">
                             <i class="fas fa-users" data-fa-transform="left-2"></i>
                         </span>
-                        <h3><span class="counter">5706</span></h3>
+                        <h3><span class="counter">5822</span></h3>
                         <p>Socios</p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
         <div class="os-animation" data-animation="fadeInUp">
             <div class="narrow text-center">
                 <div class="col-12">
-                    <p class="lead">Crece junto con nosotros</p>
+                    <p class="lead">Cooperativa de Ahorro y Crédito Societaria "San Martín" R.L. Creciendo junto a sus Socios</p>
                     <a class="btn btn-turquoise btn-sm" href="#contact">Contacto</a>
                 </div>
             </div>

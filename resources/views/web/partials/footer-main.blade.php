@@ -79,7 +79,7 @@
         	<div class="footer">
         		<div class="copyright">
                  <div class="information">
-				 © {{date('Y')}} Todos los Derechos Reservados | <a>Cooperativa de Ahorro y Crédito Societaria "San Martín" R.L.</a>  |   Esta entidad esta supervisada por ASFI
+				 © {{date('Y')}} Todos los Derechos Reservados | <a>Cooperativa de Ahorro y Crédito Societaria "San Martín" R.L.</a>  |   Esta entidad es supervisada por ASFI
                     </div>        			
         		</div>
                     <!--© {{date('Y')}} Todos los Derechos Reservados | <a>Cooperativa de Ahorro y Crédito Societaria "San Martín" R.L.</a>     <a href="#">Acceder</a>-->

@@ -9,7 +9,7 @@
 			</div>
 			<div class="face face2">
 				<div class="content">
-					<p>Brindamos soluciones financieras integrales con Eficiencia, oportunidad y Responsabilidad Social, para satisfacer las necesidades económicas de nuestros socios (as), basado en valores y Principios Cooperativos.</p>
+					<p>Brindamos soluciones financieras integrales con Eficiencia, Oportunidad y Responsabilidad Social, para satisfacer las necesidades económicas de nuestros socios (as), basado en valores y Principios Cooperativos.</p>
 					<!--<a href="#">Leer Más</a>-->
 				</div>
 			</div>
@@ -37,8 +37,8 @@
 			</div>
 			<div class="face face2">
 				<div class="content">
-					<p>Potosí, pueblo minero con excelencia, vive las duras jornadas de un trabajo agotador con la explotación de los minerales.</p>
-					<a href="#">Leer Más</a>
+					<p>La Cooperativa nace según la asamblea general del 5 de marzo de 1966, presentándose muchos problemas que fueron resueltos gracias al trabajo de los socios fundadores, mediante la Personería Jurídica N° 510 y la Resolución Suprema N° 00535 el 7 de octubre de 1966.</p>
+					<!-- <a href="#">Leer Más</a> -->
 				</div>
 			</div>
 		</div>

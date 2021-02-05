@@ -1,177 +1,95 @@
 @extends ('web.modulo')
 @section ('contenido')
+<!--- Start Fixed Background IMG Light -->
+<div class="fixed-background">
 
-<div class="container">
-     <div class="row d-flex">
-     	<div class="col-md-12 d-flex justify-content-center">
-     		<h1>Punto de Reclamo</h1>
-     	</div>
-     </div>
-	<form method="post" action="{{url('web/punto_reclamo')}}">
-		{{csrf_field()}}  
-		<div class="row border border-success mb-4">	
+	<div class="row light">
 
-			<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-				<div class="form-group" class="form-control">
-				<label for="tipo_reclamo"> Seleccionar el tipo de reclamo</label>
-					<select name="tipo_reclamo"  class="form-control selectpicker" data-size="5" id="tipo_reclamo" data-live-search="true" required>						
-						<option value="CANJE DE MATERIAL MONETARIO">CANJE MATERIAL MONETARIO</option>
-						<option value="ATENCION AL CLIENTE">ATENCION AL CLIENTE</option>
-						<option value="CHEQUE DE GERENCIA">CHEQUE DE GERENCIA</option>
-						<option value="DERECHOS DE LOS CONSUMIDORES FINANCIEROS">DERECHOS DE LOS CONSUMIDORES FINANCIEROS</option>
-						<option value="ENTREGA DE BILLETE FALSO">ENTREGA DE BILLETE FALSO</option>
-						<option value="FALLAS DEL SISTEMA">FALLAS DEL SISTEMA</option>
-						<option value="FRACCIONAMIENTO DE MATERIAL MONETARIO">FRACCIONAMIENTO DE MATERIAL MONETARIO</option>
-						<option value="MALA ATENCION EN VENTANILLA  DE CAJAS">MALA ATENCION EN VENTANILLA  DE CAJAS</option>
-						<option value="MALA INFORMACION">MALA INFORMACION</option>
-						<option value="PAGO DE SERVICIOS Y OTROS">PAGO DE SERVICIOS Y OTROS</option>
-						<option value="PRACTICAS DISCRIMINATORIAS Y ABUSIVAS">PRACTICAS DISCRIMINATORIAS Y ABUSIVAS</option>
-						<option value="PUNTO DE RECLAMO">PUNTO DE RECLAMO</option>
-						<option value="RESERVA Y CONFIDENCIALIDAD DE LA INFORMACIÓN">RESERVA Y CONFIDENCIALIDAD DE LA INFORMACIÓN</option>
 
-						<option value="RESTITUCION DE DERECHOS ">RESTITUCIÓN DE DERECHOS</option>
-						<option value="TIEMPO DE ESPERA MÁXIMO EN CAJAS">TIEMPO DE ESPERA MÁXIMO EN CAJAS</option>
+		<div class="col-md-12">
+			<div class="os-animation" data-animation="fadeInUp">
 
-						<option value="TRANSACCIONES EN VENTANILLA/BOVEDAS">TRANSACCIONES EN VENTANILLA/BOVEDAS</option>
-						
-					</select>
+				<div class="card text-justify">
+					<img class="card-img-top" width="200" height="300" src="{{asset('web/img/punto.jpg')}}" alt="">
+					<div class="card-body">
+						<h4 class="heading text-center">SERVICIO DE ATENCIÓN DE PUNTO DE RECLAMO</h4>
+						<article>
+
+							<h3>PUNTO DE RECLAMO DE LA COOPERATIVA</h3>
+
+							Disponible en nuestra oficina central, bajo el siguiente procedimiento:
+
+							<ol>
+								<li>El consumidor financiero debe apersonarse al PUNTO DE RECLAMO de la Cooperativa y exponer su reclamo en forma verbal o escrita, otorgando la información requerida por el personal de la Cooperativa.</li>
+								<li>La Cooperativa debe:</li>
+								<li>Recibir todo reclamo formulado por los consumidores financieros.</li>
+								<li>Solicitar al reclamante documentación pertinente, cuando corresponda.</li>
+								<li>Realizar el análisis de toda la documentación presentada por el reclamante.</li>
+								<li>Emitir y registrar la respuesta del reclamo en el plazo establecido.</li>
+								<li>Proporcionar la respuesta a los consumidores financieros.</li>
+								<li>En el plazo de cinco (5) días hábiles administrativos a partir del día siguiente del registro de reclamo, el reclamante puede apersonarse por la Cooperativa a recoger su carta de respuesta.</li>
+							</ol>
+
+
+
+
+
+
+
+							<h3>PÁGINA WEB DEL PUNTO DE RECLAMO DE LA COOPERATIVA</h3>
+							
+								Disponible en nuestra página web, bajo el siguiente procedimiento:
+								<ol text-indent: 40px;> 
+									<li>El consumidor financiero debe ingresar a nuestra página web y completar el formulario de presentación de reclamos <a class="nav-link" href="{{route('reclamo')}}">https://sanmartin.net.bo/web/punto_reclamo/reclamo</a></li>
+									<li>En el plazo de cinco (5) días hábiles administrativos a partir del día siguiente del registro de reclamo, el reclamante puede apersonarse por la Cooperativa a recoger su carta de respuesta; adicionalmente, la Cooperativa le envía la carta de respuesta mediante correo electrónico.</li>
+
+								</ol>							
+
+							<h3>DEFENSORÍA DEL CONSUMIDOR FINANCIERO - ASFI</h3>
+							Disponible en todas las oficinas de la Autoridad de Supervisión del Sistema Financiero - ASFI en los nueve (9) departamentos, bajo el siguiente procedimiento:</br>
+								<ol>
+									<li>El consumidor financiero debe apersonarse a cualquier oficina de ASFI y exponer su reclamo en forma verbal y escrita.</li>
+									<li>La Autoridad de Supervisión del Sistema Financiero – ASFI comunica a la Cooperativa el reclamo registrado.
+									</li>
+									<li>En el plazo de cinco (5) días hábiles administrativos a partir del día siguiente del registro de reclamo, el reclamante puede apersonarse por la Cooperativa a recoger su carta de respuesta.</li>
+								</ol>
+
+
+							<h3>ASFI MÓVIL</h3>
+							Disponible a través de la aplicación ASFI MÓVIL de la Autoridad de Supervisión del Sistema Financiero - ASFI, bajo el siguiente procedimiento:
+
+							<ol>
+								<li>El consumidor financiero debe descargar de Playstore la aplicación ASFI MÓVIL, y registrar su reclamo en el formulario disponible.</li>
+								<li>La Autoridad de Supervisión del Sistema Financiero – ASFI comunica a la Cooperativa el reclamo registrado.</li>
+								<li>En el plazo de cinco (5) días hábiles administrativos a partir del día siguiente del registro de reclamo, el reclamante puede apersonarse por la Cooperativa a recoger su carta de respuesta.
+								</li>
+							</ol>
+						</article>
+
+
+
+					</div>
 				</div>
+
 			</div>
+			<!--- End Animation -->
+		</div>
+		<!--- End col-md-12 -->
 
+	</div>
+	<!--- End of Row Light -->
 
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="name">Nombres</label>
-					<input type="text" name="name" class="form-control" value="{{old('name')}}" required>
-				</div>
-			</div>
+	<div class="fixed-wrap">
+		<div id="fixed-2">
+		</div>
+	</div>
 
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="apellidos">Apellidos</label>
-					<input type="text" name="apellidos" class="form-control" value="{{old('apellidos')}}" required>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="ci">Cédula de Identidad</label>
-					<input type="text" name="ci" class="form-control" value="{{old('ci')}}" required>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group" class="form-control">
-				<label for="tipo"> Expedido en </label>
-					<select name="exp"  class="form-control selectpicker" data-size="5" id="tipo_reclamo" data-live-search="true" required>						
-						<option value="PT"> PT </option>				
-						<option value="LP"> LP </option>
-						<option value="CB"> CB</option>
-						<option value="SC"> SC</option>
-						<option value="BN"> BN</option>
-						<option value="PA"> PA</option>
-						<option value="TJ"> TJ</option>
-						<option value="CH"> CH</option>
-						<option value="OR"> OR</option>
-					</select>
-				</div>
-			</div>
-
-		
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group" class="form-control">
-				<label for="tipo"> Seleccionar Tipo de Reclamante</label>
-					<select name="tipo"  class="form-control selectpicker" data-size="5" id="tipo_reclamo" data-live-search="true" required>						
-						<option value="Persona (Persona Natural)"> Persona (Persona Natural) </option>				
-						<option value="Empresa (Persona Jurídica)"> Empresa (Persona Jurídica) </option>
-						<option value="Apoderado de una Persona Natural"> Apoderado de una Persona Natural</option>
-					</select>
-				</div>
-			</div>
-
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="representante">Nombre del representante legal o apoderado</label>
-					<input type="text" name="representante" class="form-control" value="{{old('representante')}}">
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="numero_testimonio">Número de testimonio poder</label>
-					<input type="text" name="numero_testimonio" class="form-control" value="{{old('numero_testimonio')}}">
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="direccion">Dirección (Calle  y Zona)</label>
-					<input type="text" name="direccion" class="form-control" value="{{old('direccion')}}"  required>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="email">Email</label>
-					<input type="email" name="email" class="form-control" value="{{old('email')}}" required>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="telefono">Celular</label>
-					<input type="number" name="telefono" class="form-control" value="{{old('telefono')}}" required>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="fecha">Fecha del hecho que motiva el reclamo</label>
-					<input type="date" name="fecha" class="form-control" value="{{old('fecha')}}" required>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="monto_comprometido">Monto comprometido</label>
-					<input type="number" name="monto_comprometido" class="form-control" value="{{old('monto_comprometido')}}" required>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="departamento">Origen del reclamo (Departamento Ciudad)</label>
-					<input type="text" name="departamento" class="form-control" value="{{old('departamento')}}">
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
-					<label for="descripcion">Descripción del reclamo y/o solicitud del reclamante</label>
-					<textarea type="text" name="descripcion" class="form-control" value="{{old('descripcion')}}">
-						
-					</textarea>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group text-center">
-				<label for="descripcion">Captcha</label>
-					{!! Recaptcha::Render() !!}
-				</div>
-			</div>
-
-			<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-				<div class="form-group text-center">
-					<button class="btn btn-success" type="submit">Enviar</button>
-					<button class="btn btn-danger" type="reset">Cancelar</button>
-				</div>
-			</div>
-
-		</div>	
-	</form> 	
 </div>
+<!--- End Fixed Background IMG Light -->
+
+<div style="height: 150px; overflow: hidden; background: #f2f2f2"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+		<path d="M0.00,49.98 C149.99,150.00 275.11,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#4CAC54"></path>
+	</svg></div>
 
 
 @endsection

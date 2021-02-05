@@ -6,34 +6,14 @@
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-title" id="exampleModalCenterTitle" style="font-size: 26px; text-align: justify; color:green;text-align: center">Cooperativa de Ahorro y Crédito <br>"San Martín" R.L.<br> Comunicado</h2>
+					<!-- <h2 class="modal-title" id="exampleModalCenterTitle" style="font-size: 26px; text-align: justify; color:green;text-align: center">Formulario de Registro de Reclamos</h2> -->
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					<p>Estimados socios (as) y población potosina:</p>
-					<p style="font-size: 15px; text-align: justify;">
-						La Cooperativa de Ahorro y Crédito Societaria San Martin R.L., con el objetivo de brindarles un mejor servicio en estos tiempos de Pandemia, nos permitimos hacerles conocer el lanzamiento de nuestros nuevos productos:</p>
-					<p>Con la novedad que usted, puede realizar la gestión de crédito desde la comodidad de su hogar en línea, con solo ingresar a la página Web: <a href="https://sanmartin.net.bo/">www.sanmartin.net.bo</a> en la opción servicios y siguiendo los pasos gestionará su crédito.</p>
-					<p>Asimismo, estamos ofertando:</p>
-					<p>
-						<ul style="text-indent: 1.7em">
-							<li>Préstamos de consumo desde Bs. 5.000 a adelante</li>
-							<li>Para incentivar la reactivación de economía en nuestro departamento estamos ofertando microcréditos con las tasas más bajas del mercado.</li>
-						</ul>
-					</p>
-					<p>Si usted está interesado en ahorrar le ofrecemos:</p>
-					<p>
-						<ul style="text-indent: 1.7em">
-							<li>Depósitos a Plazo Fijo hasta con el 7% de interés.</li>
-						</ul>
-					</p>
-					<p>
-						Usted nos puede encontrar también en <a href="https://www.facebook.com/Cooperativa-de-Ahorro-y-Cr%C3%A9dito-Societaria-San-Mart%C3%ADn-RL-943330929118680/">Facebook</a>, o a nuestras líneas telefónicas Tel:6222431 * Telf..6230763
-					</p>
-					<p style="font-size: 15px; text-align: center;"><strong>“Esta entidad es supervisada por ASFI”</strong></p>
-					<p style="font-size: 15px; text-align: center;"><strong>La Gerencia General</strong> </p>
+				
+					<a href="{{route('registro-diferidos')}}"><img class="img-fluid" src="{{asset('web/img/descarga.png')}}"></a>
 				</div>
 				<div class="modal-footer">
 					<!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -76,6 +56,7 @@
 		<script src="{{asset('web/js/jquery.counterup.js')}}"></script>
 		<script src="{{asset('web/js/validator.js')}}"></script>
 		<script src="{{asset('web/js/contact.js')}}"></script>
+		<!-- <script src="{{asset('web/js/bootstrap-select.min.js')}}"></script> -->
 
 		<!-- Cargar código javascript-->
 		@stack('scripts')
@@ -85,13 +66,13 @@
 
 
 
-		@if (session('showModal'))
+		<!-- @if (session('showModal'))
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#myModal').modal('show')
 			});
 		</script>
-		@endif
+		@endif -->
 
 
 		<!--Start of Tawk.to Script-->

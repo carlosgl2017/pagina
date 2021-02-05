@@ -6,7 +6,6 @@ class EmailController extends Controller
 {
     public function index(Request $request)
     {
-        dd('hi');
         $subject = "Punto de Reclamo";
         $for = "info@sanmartin.com.bo";
         Mail::send('email', $request->all(), function ($msj) use ($subject, $for) {

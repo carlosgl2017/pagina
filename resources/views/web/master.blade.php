@@ -5,10 +5,15 @@
     @include('web.partials.header')
 	<!--- Navigation -->
 	@include('web.partials.nav-main')
+	
     <!--- Start Home section -->
     @include('web.partials.home-section-main')
 	<!-- Parte avisos-->
-	@include('web.partials.avisos-section-main') 
+	
+	<!--- Start Features Section -->
+	@include('web.partials.avisos-section-main')   
+	<!--- Start Portfolio Section -->
+	
 	<!--- Start Features Section -->
 	@include('web.partials.features-section-main')   
 	<!--- Start Portfolio Section -->

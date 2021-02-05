@@ -18,11 +18,9 @@ class CreateAsistenciaTable extends Migration
             $table->date('fecha_asistencia');
             $table->integer('id_incentivo')->nullable(); 
             $table->boolean('recepcion')->dafault(false); 
-            $table->integer('nro_socio')->unsigned(); 
-            $table->integer('id_evento')->unsigned(); 
+            $table->integer('id_invitado')->unsigned(); 
             $table->integer('id_estado')->unsigned(); 
-            $table->foreign('nro_socio')->references('nro_socio')->on('socio'); 
-            $table->foreign('id_evento')->references('id_evento')->on('evento'); 
+            $table->foreign('id_invitado')->references('id_invitado')->on('invitado'); 
             $table->foreign('id_estado')->references('id_estado')->on('estado'); 
             $table->timestamps();
         });

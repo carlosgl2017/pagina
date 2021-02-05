@@ -62,14 +62,36 @@ Route::post('/web/Educacion', 'InvitadoController@index');
 Route::get('/web/Servicios/otorgacion_creditos', 'ServiciosController@otorgacion_creditos')->name('otorgacion_creditos');
 Route::get('/web/Servicios/certificados_aportacion', 'ServiciosController@certificados_aportacion')->name('certificados_aportacion');
 Route::get('/web/Servicios/cambio_divisas', 'ServiciosController@cambio_divisas')->name('cambio_divisas');
+Route::get('/web/Servicios/pago-aapos', 'ServiciosController@aapos')->name('pago-aapos');
+Route::get('/web/Servicios/pago-sepsa', 'ServiciosController@sepsa')->name('pago-sepsa');
 /*--------------------Punto de reclamo----------------------*/
 Route::get('/web/punto_reclamo/index', 'PuntoReclamoController@index')->name('punto_reclamo');
-Route::get('/web/punto_reclamo/create', 'PuntoReclamoController@create'); //crear
+Route::get('/web/punto_reclamo/reclamo', 'PuntoReclamoController@create')->name('reclamo');
+/* Route::get('/web/punto_reclamo/create', 'PuntoReclamoController@create'); //crear */
 Route::post('/web/punto_reclamo/', 'PuntoReclamoController@store'); //crear
+/* ----------------------------Registro de Diferidos------------------------------------ */
+Route::get('/web/registro_diferidos/index', 'RegistroDiferidosController@index')->name('registro-diferidos');
+Route::get('/web/registro_diferidos/registro', 'RegistroDiferidosController@create')->name('registro');
+Route::post('/web/registro_diferidos/', 'RegistroDiferidosController@store'); //crear 
+
+/* ---------------------------------Generar-documento Begin--------------------------------- */
+Route::get('/web/generar-documento/index', 'GenerarDocumentoDiferidosController@index')->name('generar-documento');
+Route::get('/web/generar-documento/solicitud', 'GenerarDocumentoDiferidosController@solicitud')->name('solicitud');
+Route::get('/web/generar-documento/registro', 'GenerarDocumentoDiferidosController@create')->name('registro');
+Route::post('/web/generar-documento/', 'GenerarDocumentoDiferidosController@store'); //crear 
+/* ---------------------------------Generar documento Ends---------------------------- */
+/*--------------------Solicitar credito index----------------------*/
+Route::get('/web/solicitar-credito/index', 'SolicitarCreditoController@index')->name('solicitar-credito');
+Route::get('/web/solicitar-credito/ayuda', 'SolicitarCreditoController@ayuda')->name('ayuda');
+
+/*-------------------------Productos--------------------------------------------*/
+Route::get('/web/productos/tasas', 'ProductosController@tasas')->name('tasas');
+
+
 /*--------------------Rutas Página End----------------------*/
 
 /*Rutas remate*/
-Route::get('/remate', 'RemateController@index'); //listado
+Route::get('/remate', 'RemateController@index')->name('remate'); //listado
 Route::get('/remate/create', 'RemateController@create'); //crear
 Route::post('/remate', 'RemateController@store'); //crear
 Route::get('/remate/{id}/edit', 'RemateController@edit'); //formulario de edicion
