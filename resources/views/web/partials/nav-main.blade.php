@@ -71,6 +71,16 @@
                <!-- <li><a class="dropdown-item" href="{{route('otorgacion_creditos')}}">Otorgación de Créditos</a></li> -->
                <li><a class="dropdown-item" href="{{route('solicitar-credito')}}">Otorgación de Créditos</a></li>
                <li><a class="dropdown-item" href="{{route('certificados_aportacion')}}">Certificados de Aportación</a></li>
+            
+               <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     tasas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                     <li><a class="dropdown-item" href="{{route('tasas-activas')}}">Activas</a></li>
+                     <li><a class="dropdown-item" href="{{route('tasas-pasivas')}}">Pasivas</a></li>
+                  </ul>
+               </li>
                <!-- <li><a class="dropdown-item" href="{{route('tasas')}}">Tasas</a></li> -->
                <div class="dropdown-divider"></div>
             </ul>
@@ -104,7 +114,7 @@
             </ul>
          </li>
 
-    
+
 
          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -113,8 +123,8 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                <li><a class="dropdown-item" href="{{route('inscripcion')}}">Inscripción al curso</a></li>
                <li><a class="dropdown-item" href="{{route('programa_educacion')}}">Programa de Educación Financiera</a></li>
-               
-                <li><a class="dropdown-item" href="{{route('generar-documento')}}">Generar Documento de Solicitud</a></li> 
+
+               <li><a class="dropdown-item" href="{{route('generar-documento')}}">Generar Documento de Solicitud</a></li>
                <li><a class="dropdown-item" href="{{route('derechos_obligaciones')}}">Derechos y Obligaciones</a></li>
                <li><a class="dropdown-item" href="{{route('responsabilidad_social')}}">Responsabilidad Social Empresarial</a></li>
                <li><a class="dropdown-item" href="{{route('liderazgo')}}">Liderazgo</a></li>
@@ -127,7 +137,7 @@
                P. Reclamo
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-               
+
                <li><a class="dropdown-item" href="{{route('punto_reclamo')}}">Punto de Reclamo</a></li>
                <li><a class="dropdown-item" href="{{route('registro-diferidos')}}">Reclamo Diferimiento de Créditos</a></li>
                <div class="dropdown-divider"></div>
@@ -143,7 +153,7 @@
          <li class="nav-item">
             <a class="nav-link" href="{{route('ubicacion')}}">Ubicación</a>
          </li>
-         
+
       </ul>
       <!--<form class="form-inline my-2 my-lg-0">
                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

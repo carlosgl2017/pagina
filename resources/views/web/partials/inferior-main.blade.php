@@ -66,13 +66,7 @@
 
 
 
-		<!-- @if (session('showModal'))
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('#myModal').modal('show')
-			});
-		</script>
-		@endif -->
+		<!-- here code popup-->
 
 
 		<!--Start of Tawk.to Script-->

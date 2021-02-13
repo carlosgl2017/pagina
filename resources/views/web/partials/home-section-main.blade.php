@@ -11,17 +11,17 @@
       <!-- Slide One -->
       <div class="carousel-item active" style="background-image: url('web/img/computers-2.jpg')" alt>
         <!-- aqui -->
-         <div class="carousel-caption text-center">
-            <div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
-              <h1>Bienvenido</h1>
-            </div>
-            <div class="os-animation" data-animation="bounceInUp" data-delay=".8s">
-              <h3></h3>
-            </div>
-            <div class="os-animation" data-animation="bounceInUp" data-delay="1s">
-              <a  class="btn btn-success btn-lg" href="#info-economica">Comenzar</a>
-            </div>
-          </div> -->
+        <div class="carousel-caption text-center">
+          <div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
+            <h1>Bienvenido</h1>
+          </div>
+          <div class="os-animation" data-animation="bounceInUp" data-delay=".8s">
+            <h3></h3>
+          </div>
+          <div class="os-animation" data-animation="bounceInUp" data-delay="1s">
+            <a class="btn btn-success btn-lg" href="#info-economica">Comenzar</a>
+          </div>
+        </div> -->
         <!-- descomentar hasta aqui
         <!--- End Carousel Caption -->
       </div>
@@ -49,3 +49,19 @@
   <!--- End Carousel Image Slider -->
 </div>
 <!--- End Home Section -->
+
+
+@push ('scripts')
+<!-- @if (session('showModal'))
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#myModal').modal('show')
+  });
+</script>
+@endif -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#myModal').modal('show')
+  });
+</script>
+@endpush

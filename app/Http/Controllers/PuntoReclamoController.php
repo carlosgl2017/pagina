@@ -75,8 +75,6 @@ class PuntoReclamoController extends Controller
                return view('web.Educacion.index');
           }
      }
-
-
      public function correlativo()
      {
           $existe = Reclamo::count();

@@ -39,6 +39,7 @@ class GenerarDocumentoDiferidosController extends Controller
       if($existe)
       {       
          $prestatario=Prestatario::where('nro_prestamo',$request->input('nprestamo'))->firstOrFail();
+         $tipo_eleccion=TipoRD::where('idtipord',$request->input('idtipord'))->firstOrFail();
          $gene = new GenerarDocumentoDiferidos();
          $gene->codigo = $this->correlativo();
          $gene->idtipord = $request->input('idtipord');
@@ -47,7 +48,7 @@ class GenerarDocumentoDiferidosController extends Controller
 
          $fecha=Carbon::now();
          /* Generar pdf begin*/         
-         $pdf = PDF::loadView('web.generar-documento.solicitud',['prestatario'=>$prestatario,'fecha'=>$fecha,'codigo'=>$this->correlativo()-1]);
+         $pdf = PDF::loadView('web.generar-documento.solicitud',['prestatario'=>$prestatario,'fecha'=>$fecha,'codigo'=>$this->correlativo()-1,'tipo_eleccion'=>$tipo_eleccion]);
          $pdf->setPaper('Letter');
          return $pdf->download();
          /* generar pdf ends */

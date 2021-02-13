@@ -85,7 +85,9 @@ Route::get('/web/solicitar-credito/index', 'SolicitarCreditoController@index')->
 Route::get('/web/solicitar-credito/ayuda', 'SolicitarCreditoController@ayuda')->name('ayuda');
 
 /*-------------------------Productos--------------------------------------------*/
-Route::get('/web/productos/tasas', 'ProductosController@tasas')->name('tasas');
+Route::get('/web/productos/tasas', 'ProductosController@tasas')->name('tasas');/*where is use*/
+Route::get('/web/productos/tasas-activas', 'ProductosController@tasas_activas')->name('tasas-activas');
+Route::get('/web/productos/tasas-pasivas', 'ProductosController@tasas_pasivas')->name('tasas-pasivas');
 
 
 /*--------------------Rutas Página End----------------------*/

@@ -43,15 +43,15 @@
                     </div>
                 </div>
 
-                <!--<div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3">
                     <div class="skill">
                         <span class="fa-layers fa-4x">
                             <i class="fas fa-cloud-download-alt" data-fa-transform="left-1"></i>
                         </span>
                         <h3><span class="counter">101</span></h3>
-                        <p>Resources</p>
+                        <p>Visitantes</p>
                     </div>
-                </div>-->
+                </div>
 
             </div>
             <!--- End of Row -->

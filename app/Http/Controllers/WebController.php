@@ -19,13 +19,13 @@ class WebController extends Controller
             return $node->first()->text();
         });
         // Envio de cookie a la vista
-        if (Cookie::has('hide_modal')) {
+       /*---------------- if (Cookie::has('hide_modal')) {
             session(['showModal' => false]);
         } else {
             session(['showModal' => true]);
-            $cookie = Cookie::make('hide_modal', true, 240); //indica tiempo en minutos en laravel
+            $cookie = Cookie::make('hide_modal', true, 255); //indica tiempo en minutos en laravel
             Cookie::queue($cookie);
-        }
+        }------------*/
         /*$ufv=$scrawler->filter('#accordion1')->filter('.cotizacion-texto')->each(function ($node) {
             return $node->first()->text();
             });*/

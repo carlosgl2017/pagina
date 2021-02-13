@@ -101,7 +101,6 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem; }
-
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
@@ -2749,7 +2748,14 @@ tbody.collapse.show {
   background-clip: border-box;
   border: 1px solid #c2cfd6; }
 
-.card-body, .card-block {
+.
+
+
+
+
+
+
+ .card-block {
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
   padding: 1.25rem; }
@@ -7282,7 +7288,14 @@ button {
     padding: 0 1.25rem;
     text-align: center; }
 
-[class*="card-outline-"] .card-body, [class*="card-outline-"] .card-block {
+[class*="card-outline-"] .
+
+
+
+
+
+
+, [class*="card-outline-"] .card-block {
   background: #fff !important; }
 
 [class*="card-outline-"].card-outline-top {
